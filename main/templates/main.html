@@ -1,120 +1,4 @@
 {% load static %}
-{#<!doctype html>#}
-{#<html lang="en">#}
-{#  <head>#}
-{#    <meta charset="utf-8">#}
-{#    <meta name="viewport" content="width=device-width, initial-scale=1">#}
-{#    <title>Home Chefs-Compass</title>#}
-{#    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">#}
-{#      <!-- CSS Link -->#}
-{#      <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
-{#      <!-- Google Fonts -->#}
-{#    <link rel="preconnect" href="https://fonts.googleapis.com">#}
-{#    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>#}
-{#    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">#}
-{#  </head>#}
-{#  <body>#}
-{#      <!-- TOP CONTAINER -->#}
-{#      <div class="headiv container">#}
-{#        <div class="logo">#}
-{#            <button type="button" class="btn btn-link"><img class="logo-image" src="{% static 'images/logo.png' %}" alt="logo"></button>#}
-{#            <h1 class="Chefs-Compass">CHEF'S COMPASS</h1>#}
-{#            <p class="top-tagline">explore the global tastes...</p>#}
-{#            <button type="button" class="btn settings_button"><i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></button>#}
-{#            <button class="loginbtn" onclick="window.location.href='login.html'"> <!--ADD LINK HERE-->#}
-{#                <div class="loginBtnDiv">#}
-{#                    Log-in#}
-{#                </div>#}
-{#            </button>       #}
-{#        </div>#}
-{#        #}
-{#        <!-- SEARCH BAR(sbar) -->#}
-{##}
-{#        <div>#}
-{#            <div class="sbarBase">#}
-{#                <!-- FEELING LUCKY (fl)-->#}
-{#                <div class="flBase">#}
-{#                   <button class="btnFL"><p class="flText">feeling lucky?</p></button> #}
-{#                </div>#}
-{#            </div>#}
-{#            <!-- NAVBAR -->#}
-{#            <div class="navBar">#}
-{#                <button class="btnNav"><p class="recipeTxt">Recipes <i class="fa-solid fa-caret-down" style="color: #000000;"></i></p></button>#}
-{#                <button class="btnNav"><p class="shopTxt">Shop <i class="fa-solid fa-caret-down " style="color: #000000;"></i></p></button>#}
-{#                <button class="btnNav"><p class="pricingTxt" onclick="window.location.href='pricing.html'">Pricing</p></button>#}
-{#                <button class="btnNav"><p class="aboutTxt">About</p></button>#}
-{#                <button class="btnNav"><p class="contactTxt">Contact</p></button>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-{#    <!-- ----- MAIN CARDS------ -->#}
-{#    <div class="mainCard">#}
-{#        <div class="c1">#}
-{#            <img class="tutorialsImg" src="{% static 'images/jonathan-borba-uB7q7aipU2o-unsplash.jpg' %}" alt="">#}
-{#        </div>#}
-{#        <div class="c2">#}
-{#            <img class="ingredientsImg" src="{% static 'images/nathan-dumlao-bRdRUUtbxO0-unsplash.jpg' %}" alt="">#}
-{#        </div>#}
-{#        <div class="c3">#}
-{#            <img  class="recipeImg" src="{% static 'images/calum-lewis-vA1L1jRTM70-unsplash.jpg' %}" alt="">#}
-{#        </div>#}
-{#        <p class="c1Txt">Tutorials</p>#}
-{#        <p class="c2Txt">Ingredients</p>#}
-{#        <p class="c3Txt">Recipes</p>#}
-{#    </div>#}
-{#    #}
-{#    <!-- ------------CALL TO ACTION---------- -->#}
-{#    <div class="actionCall">#}
-{#        <div class="actionCard">#}
-{#            <img class="actionImg" src="{% static 'images/katie-smith-uQs1802D0CQ-unsplash (1).jpg' %}" alt="">#}
-{#        </div>#}
-{#        <div class="actiontxtDiv">#}
-{#            <h1 class="actionTxt">Let's Get Cookin'.</h1>#}
-{#        </div>#}
-{#        <button  class="btn actionBtn btn-lg btn-success" onclick="window.location.href='login.html'">Create Account</button>#}
-{#    </div>#}
-{#    <!-- --------CUISINES CARDS------- -->#}
-{#    <div class="cuisines">#}
-{#        <div class="asian">#}
-{#            <img class="cuisineImg" src="{% static 'images/jason-cooper-XEhchWQuWyM-unsplash (1).jpg' %}" alt="">#}
-{#        </div>#}
-{#        <div class="european">#}
-{#            <img class="cuisineImg" src="{% static 'images/joss-woodhead-3wFRlwS91yk-unsplash.jpg' %}" alt="">#}
-{#        </div>#}
-{#        <div class="african">#}
-{#            <img class="cuisineImg" src="{% static 'images/hu-chen-60XLoOgwkfA-unsplash.jpg' %}" alt="">#}
-{#        </div>#}
-{#        <div class="northAmerican">#}
-{#            <img class="cuisineImg" src="{% static 'images/touann-gatouillat-vergos-dSBJv66Yjlk-unsplash.jpg' %}" alt="">#}
-{#        </div>#}
-{#        <div class="southAmerican">#}
-{#            <img class="cuisineImg" src="{% static 'images/david-vives-tm7yOln4RYs-unsplash.jpg' %}" alt="">#}
-{#        </div>#}
-{#        <div class="australian">#}
-{#            <img class="cuisineImg" src="{% static 'images/graham-holtshausen-F8ad-ZksufU-unsplash.jpg' %}" alt="">#}
-{#        </div>#}
-{#    </div>#}
-{#    <!-- ------FEATURES------- -->#}
-{#    <div class="feats">#}
-{#        <div class="feat1">#}
-{#        </div>#}
-{#        <div class="feat2">       #}
-{#        </div>#}
-{#        <div class="feat3">#}
-{#        </div>#}
-{#    </div>#}
-{##}
-{##}
-{#    <div class="footer">#}
-{#        #}
-{#    </div>#}
-{#    <script src="https://kit.fontawesome.com/1c7ed19f37.js" crossorigin="anonymous"></script>#}
-{#    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>#}
-{#    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>#}
-{#    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>#}
-{#  </body>#}
-{#</html>#}
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -133,17 +17,17 @@
       <!-- TOP CONTAINER -->
       <div class="headiv container">
         <div class="logo">
-            <button type="button" class="btn btn-link"><img class="logo-image"  src="{% static 'images/logo.png' %} alt="logo"></button>
+            <button type="button" class="btn btn-link"><img class="logo-image" src="{% static 'images/logo.png' %}" alt="logo"></button>
             <h1 class="Chefs-Compass">CHEF'S COMPASS</h1>
             <p class="top-tagline">explore the global tastes...</p>
             <button type="button" class="btn settings_button"><i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></button>
-            <button class="loginbtn" onclick="window.location.href='/Users/zoraiz/Desktop/Chefs Compass/login.html'"> <!--ADD LINK HERE-->
+            <button class="loginbtn" onclick="window.location.href='{% url 'login' %}'"> <!--ADD LINK HERE-->
                 <div class="loginBtnDiv">
-                    Log-in
+                    Sign-up
                 </div>
-            </button>
+            </button>       
         </div>
-
+        
         <!-- SEARCH BAR(sbar) -->
 
         <div>
@@ -151,7 +35,7 @@
                 <i class="fa-solid fa-magnifying-glass sbarIcon" style="color: #000000;"></i>
                 <!-- FEELING LUCKY (fl)-->
                 <div class="flBase">
-                   <button class="btnFL"><p class="flText">feeling lucky?</p></button>
+                   <button class="btnFL"><p class="flText">feeling lucky?</p></button> 
                 </div>
             </div>
             <!-- NAVBAR -->
@@ -167,13 +51,13 @@
     <!-- ----- MAIN CARDS------ -->
     <div class="mainCard">
         <div class="c1">
-            <img class="tutorialsImg"  src="{% static 'images/jonathan-borba-uB7q7aipU2o-unsplash.jpg' %} alt="">
+            <img class="tutorialsImg" src="{% static 'images/jonathan-borba-uB7q7aipU2o-unsplash.jpg' %}" alt="">
         </div>
         <div class="c2">
-            <img class="ingredientsImg"  src="{% static 'images/nathan-dumlao-bRdRUUtbxO0-unsplash.jpg' %} alt="">
+            <img class="ingredientsImg"  src="{% static 'images/nathan-dumlao-bRdRUUtbxO0-unsplash.jpg' %}" alt="">
         </div>
         <div class="c3">
-            <img  class="recipeImg"  src="{% static 'images/calum-lewis-vA1L1jRTM70-unsplash.jpg' %} alt="">
+            <img  class="recipeImg" src="{% static 'images/calum-lewis-vA1L1jRTM70-unsplash.jpg' %}" alt="">
         </div>
         <!-- ---- Main Card Headings---- -->
         <p class="c1MainTxt">Tutorials</p>
@@ -182,14 +66,14 @@
         <!-- -----Main Card Lower Text----- -->
         <p class="c1LowerTxt">New to the Art of Cooking? We'll guide you.</p>
         <p class="c2LowerTxt">Can't find the ingredients? We'll Deliver.<p>
-        <p class="c3LowerTxt">Need the Original Tastes? We've got you.</p>
+        <p class="c3LowerTxt">Need the Original Tastes? We've got you.</p> 
 
     </div>
-
+    
     <!-- ------------CALL TO ACTION---------- -->
     <div class="actionCall">
         <div class="actionCard">
-            <img class="actionImg"  src="{% static 'images/katie-smith-uQs1802D0CQ-unsplash (1).jpg' %} alt="">
+            <img class="actionImg" src="{% static 'images/katie-smith-uQs1802D0CQ-unsplash (1).jpg' %}" alt="">
         </div>
         <div class="actiontxtDiv">
             <h1 class="actionTxt">Let's Get Cookin'.</h1>
@@ -197,24 +81,32 @@
         <button  class="btn actionBtn btn-lg btn-success" onclick="window.location.href='/Users/zoraiz/Desktop/Chefs Compass/login.html'">Create Account</button>
     </div>
     <!-- --------CUISINES CARDS------- -->
+    <h1 class="cuisineTxt">Cuisines</h1>
     <div class="cuisines">
         <div class="asian">
             <img class="cuisineImg" src="{% static 'images/jason-cooper-XEhchWQuWyM-unsplash (1).jpg' %}" alt="">
+            <p class="asianTxt">Asian</p>
         </div>
         <div class="european">
             <img class="cuisineImg" src="{% static 'images/joss-woodhead-3wFRlwS91yk-unsplash.jpg' %}" alt="">
+            <p class="euroTxt">European</p>
         </div>
         <div class="african">
-            <img class="cuisineImg" src="{% static 'images/hu-chen-60XLoOgwkfA-unsplash.jpg' %}" alt="">
+            <img class="cuisineImg" src="{% static 'images/hu-chen-60XLoOgwkfA-unsplash.jpg' %}"  alt="">
+            <p class="afroTxt">African</p>
         </div>
         <div class="northAmerican">
             <img class="cuisineImg" src="{% static 'images/touann-gatouillat-vergos-dSBJv66Yjlk-unsplash.jpg' %}" alt="">
+            <p class="nramericnTxt">North-American</p>
         </div>
         <div class="southAmerican">
             <img class="cuisineImg" src="{% static 'images/david-vives-tm7yOln4RYs-unsplash.jpg' %}" alt="">
+            <p class="stamericnTxt">South-American</p>
         </div>
         <div class="australian">
-            <img class="cuisineImg" src="{% static 'images/graham-holtshausen-F8ad-ZksufU-unsplash.jpg' %}" alt="">
+            <img class="cuisineImg" src="{% static 'images/graham-holtshausen-F8ad-ZksufU-unsplash.jpg' %}"
+             alt="">
+             <p class="ausiTxt">Australian</p>
         </div>
     </div>
     <!-- ------FEATURES------- -->
@@ -240,7 +132,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae faucibus arcu. Etiam elit sapien, iaculis in quam ut, tempus bibendum magna. Suspendisse tristique blandit ipsum, eu eleifend diam malesuada eget. Proin dignissim, mauris eu tempor pulvinar, magna orci suscipit odio, vitae rhoncus dolor ante quis nisl. Donec ac nunc vulputate, facilisis purus a, iaculis sem. Etiam eu varius tellus. Ut eleifend diam sed elit pellentesque iaculis.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae faucibus arcu. Etiam elit sapien, iaculis in quam ut, tempus bibendum magna. Suspendisse tristique blandit ipsum, eu eleifend diam malesuada eget. Proin dignissim, mauris eu tempor pulvinar, magna orci suscipit odio, vitae rhoncus dolor ante quis nisl. Donec ac nunc vulputate, facilisis purus a, iaculis sem. Etiam eu varius tellus. Ut eleifend diam sed elit pellentesque iaculis.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae faucibus arcu. Etiam elit sapien, iaculis in quam ut, tempus bibendum magna. Suspendisse tristique blandit ipsum, eu eleifend diam malesuada eget. Proin dignissim, mauris eu tempor pulvinar, magna orci suscipit odio, vitae rhoncus dolor ante quis nisl. Donec ac nunc vulputate, facilisis purus a, iaculis sem. Etiam eu varius tellus. Ut eleifend diam sed elit pellentesque iaculis.
-        </p>
+        </p>   
     </div>
     <script src="https://kit.fontawesome.com/1c7ed19f37.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
