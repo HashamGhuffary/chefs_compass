@@ -3,3 +3,4 @@ backports.zoneinfo==0.2.1;python_version<"3.9"
 Django==4.1.7
 sqlparse==0.4.3
 django-on-heroku
+gunicorn==20.1.0
